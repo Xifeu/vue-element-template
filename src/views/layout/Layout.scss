@@ -1,0 +1,66 @@
+.app-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  .el-container {
+    .el-header {
+      padding: 0;
+    }
+
+    .el-container {
+      // 侧边栏
+
+      .el-aside {
+
+        .sidebar-container {
+          transition: width 0.28s;
+          width: 200px;
+          height: 100%;
+          font-size: 0px;
+          overflow: hidden;
+
+          .el-menu {
+            border: none;
+            height: 100%;
+            width: 100%;
+
+            .el-menu-item,
+            .el-submenu__title {
+              height: 45px;
+              line-height: 45px;
+            }
+          }
+
+          .scrollbar-wrapper {
+            height: calc(100% + 15px);
+
+            .el-scrollbar__view {
+              height: 100%;
+            }
+          }
+
+          .is-horizontal,
+          .is-vertical {
+            display: none;
+          }
+
+          a {
+            display: inline-block;
+            width: 100%;
+            overflow: hidden;
+          }
+
+          .svg-icon {
+            margin-right: 16px;
+          }
+
+        }
+      }
+
+      .el-main {
+        padding: 0;
+      }
+    }
+  }
+}
